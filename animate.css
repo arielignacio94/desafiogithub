@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:url(https://images.pexels.com/photos/21393/pexels-photo.jpg?cs=srgb&dl=pexels-math-21393.jpg&fm=jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+}
+h1 {
+    margin: 1rem;
+    padding: 0,7rem;
+    color: brown;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    text-align: center;
+ }
+ 
+.contenedor{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+}
+.header{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-area: header;
+}
+.header .menu ul{
+    list-style-type: none;
+    display: flex;
+}
+.header .menu a{
+    color: brown;
+    text-decoration: none;
+    padding: 20px;
+}
+.header .menu a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.main{
+    background-color:  white;
+    padding: 1,2rem;
+    grid-area: main;
+}
+.main article .principal{
+    margin-bottom: 20px;
+
+}
+.main article .principal img{
+    width:100%;
+    
+    
+}
+main article h2{
+    margin: 1.2rem;
+    font-weight: normal;
+    font tab-size: 2rem;
+}
+.main article p{
+    margin: 1.2rem;
+    font-size: 1.2rem;
+    line-height:1.8rem;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #b4a796;
+    grid-area;
+    grid-area: aside;
+    
+}
+.aside .aside1{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding: 2.5rem;
+    background: color #8d8c86;
+
+}
+footer{
+    margin: 20px;
+    background-color: white;
+   
+    opacity: .5;
+    padding: 1rem;
+    width: 100%;
+    color: #8d8c86;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+
+}
+footer .redesSociales a{
+    color: #8d8c86;
+    margin left: 1.2rem;
+    width: 30px;
+}
+footer .redesSociales img{
+    width: 40px;
+    opacity: 1;
+}
+.menu1{
+   transition: all 6s ease;
+   background-color: coral;
+}
+.menu1:hover{
+    width: 200px;
+    background-color:black;
+    transform: rotate(30deg);
+}
+.menu2{
+    transition: all 6s ease;
+    background-color: coral; 
+}
+.menu2:hover{
+    width: 200px;
+    background-color:black;
+    transform: rotate(30deg);
+}
+.menu3{
+    transition: all 6s ease;
+    background-color: coral;
+}
+.menu3:hover{
+    width: 200px;
+    background-color:black;
+    transform: rotate(30deg);
+}
+.menu4{
+    transition: all 6s ease;
+    background-color: coral;
+}
+.menu4:hover{
+    width: 200px;
+    background-color:black;
+    transform: rotate(30deg);
+}
+.menu5{
+    transition: all 6s ease;
+    background-color: coral;
+}
+.menu5:hover{
+    width: 200px;
+    background-color:black;
+    transform: rotate(30deg);
+}
+.aside:hover{
+    transform: rotate(10deg);
+}
+
+
+@media screen and (max-width:500px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4 1fr);
+         grid-template-areas: 
+         "header header"
+         "main main"
+         "aside aside"
+         "footer footer";
+    }    
+}
+
